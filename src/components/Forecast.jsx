@@ -5,45 +5,58 @@ import Sunny from "../assets/icons/sun.png"
 import "../styles/Forecast.css"
 
 const Forecast = () => {
+  const days = [
+    {
+      day: "Mon",
+      date: "19 May",
+      icon: Sunny,
+      deg: "30°C",
+      status: "Sunny"
+    },
+    {
+      day: "Tue",
+      date: "20 May",
+      icon: Rainy,
+      deg: "29°C",
+      status: "Rainy"
+    },
+    {
+      day: "Wed",
+      date: "21 May",
+      icon: PartlyCloudy,
+      deg: "31°C",
+      status: "Partly Cloudy"
+    },
+    {
+      day: "Thu",
+      date: "22 May",
+      icon: Sunny,
+      deg: "34°C",
+      status: "Sunny"
+    },
+    {
+      day: "Fri",
+      date: "23 May",
+      icon: Thunderstorm,
+      deg: "30°C",
+      status: "Thunderstorm"
+    }
+  ]
   return (
     <div className='Forecast'>
       <h3 className='forcast-head'>5-Day Forecast</h3>
       <div className='days'>
-        <div className='day'>
-          <h4 className='forcast-day'>Mon</h4>
-          <p className='forcast-date'>19 May</p>
-          <img src={Sunny} alt="sun" />
-          <p className='forcast-temp'><strong>33&deg;C</strong>/24&deg;C</p>
-          <p className='forcast-status'>Sunny</p>
-        </div>
-        <div className='day'>
-          <h4 className='forcast-day' >Tue</h4>
-          <p className='forcast-date' >20 May</p>
-          <img src={Rainy} alt="sun" />
-          <p className='forcast-temp' ><strong>29&deg;C</strong>/24&deg;C</p>
-          <p className='forcast-status'>Rainy</p>
-        </div>
-        <div className='day'>
-          <h4 className='forcast-day' >Wed</h4>
-          <p className='forcast-date' >21 May</p>
-          <img src={PartlyCloudy} alt="sun" />
-          <p className='forcast-temp'><strong>31&deg;C</strong>/24&deg;C</p>
-          <p className='forcast-status'>Partly Cloudy</p>
-        </div>
-        <div className='day'>
-          <h4 className='forcast-day' >Thu</h4>
-          <p className='forcast-date'>22 May</p>
-          <img src={Sunny} alt="sun" />
-          <p className='forcast-temp' ><strong>34&deg;C</strong>/24&deg;C</p>
-          <p className='forcast-status' >Sunny</p>
-        </div>
-        <div className='day'>
-          <h4 className='forcast-day' >Fri</h4>
-          <p className='forcast-date' >23 May</p>
-          <img src={Thunderstorm} alt="sun" />
-          <p className='forcast-temp' ><strong>30&deg;C</strong>/24&deg;C</p>
-          <p className='forcast-status'>Thunderstorm</p>
-        </div>
+        {
+          days.map((day,index) => (
+              <div className='day' key={index}>
+                <h4 className='forcast-day'>{day.day}</h4>
+                <p className='forcast-date'>{day.date}</p>
+                <img src={day.icon} alt="sun" />
+                <p className='forcast-temp'><strong>{day.deg}</strong></p>
+                <p className='forcast-status'>{day.status}</p>
+              </div>
+          ))
+        }
       </div>
     </div>
   )

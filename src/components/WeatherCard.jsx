@@ -5,8 +5,42 @@ import Precipitation from "../assets/icons/precipitation.png"
 import Visibility from "../assets/icons/visible.png"
 import Wind from "../assets/icons/wind.png"
 import "../styles/WeatherCard.css"
+import WeatherInfoCard from "./WeatherInfoCard"
 
 const WeatherCard = () => {
+  const weather = {
+  humidity: 65,
+  wind: 12,
+  pressure: 1012,
+  visibility: 10,
+};
+  const weatherDetails = [
+    {
+      label: "Humidity",
+      icon: Humidity,
+      value: `${weather.humidity}%`
+    },
+    {
+      label: "Wind",
+      icon: Wind,
+      value: `${weather.wind} km/h`
+    },
+    {
+      label: "Pressure",
+      icon: Pressure,
+      value: `${weather.pressure} hPa`
+    },
+    {
+      label: "Visibility",
+      icon: Visibility,
+      value: `${weather.visibility} Km`
+    },
+    {
+      label: "Precipitation",
+      icon: Precipitation,
+      value: "0 mm"
+    }
+  ]
   return (
     <div className='weather-card'>
       <div className="city-weather">
@@ -22,41 +56,16 @@ const WeatherCard = () => {
         </div>
       </div>
       <div className="weather-properties">
-        <div className='weather-property'>
-          <img src={Humidity} alt="image" />
-          <div className='weather-property-flex'>
-            <p>Humidity</p>
-            <p>52%</p>
-          </div>
-        </div>
-        <div className='weather-property'>
-          <img src={Wind} alt="image" />
-          <div className='weather-property-flex'>
-            <p>Wind</p>
-            <p>10 km/h</p>
-          </div>
-        </div>
-        <div className='weather-property'>
-          <img src={Pressure} alt="image" />
-          <div className='weather-property-flex'>
-            <p>Pressure</p>
-            <p>1012 hPa</p>
-          </div>
-        </div>
-        <div className='weather-property'>
-          <img src={Visibility} alt="image" />
-          <div className='weather-property-flex'>
-            <p>Visibility</p>
-            <p>8 km</p>
-          </div>
-        </div>
-        <div className='weather-property'>
-          <img src={Precipitation} alt="image" />
-          <div className='weather-property-flex'>
-            <p>Precipitation</p>
-            <p>0 mm</p>
-          </div>
-        </div>
+        {
+          weatherDetails.map((item,index) => (
+            <WeatherInfoCard 
+            key={index}
+            icon={item.icon}
+            label = {item.label}
+            value = {item.value}
+            />
+          ))
+        }
       </div>
     </div>
   )

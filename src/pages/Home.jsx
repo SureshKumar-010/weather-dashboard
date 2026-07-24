@@ -35,16 +35,14 @@ const Home = () => {
           <div className="recent-search">
             <h3 className='recent-search-heading'>Recent Searches</h3>
             {
-              recentSearches.map((search) => (
-                <>
-                  <div className="searches" key={search}>
+              recentSearches.map((search,index) => (
+                  <div className="searches" key={index}>
                     <div className='searches-left'>
                       <img src={clock} alt="clock" />
                       <p>{search}</p>
                     </div>
                     <button><img src={Delete} alt="Delete" /></button>
                   </div>
-                </>
               ))
             }
           </div>
