@@ -1,0 +1,27 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0 30px;
+}
+.left-div img{
+    width: 35px;
+    object-fit: contain;
+    gap:2;
+}
+.left-div{
+    display: flex;
+    width: auto;
+    height: 10vh;
+}
+.right-div img{
+    width:20px;
+}
+.right-div button{
+    width: 80px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,25,0.5);
+    text-align: center;
+}

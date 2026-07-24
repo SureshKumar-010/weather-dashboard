@@ -1,0 +1,60 @@
+h1,div,p{
+    margin: 0;
+}
+
+.weather-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+.city-weather{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px  22px;
+    align-items: center;
+}
+
+.city-weather-right img{
+    width: 180px;
+}
+.city-weather-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+}
+.degrees{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.weather-status{
+    font-size: 1.2rem;
+    color: blue;
+    font-weight: 600;
+}
+.weather-properties{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 20px;
+}
+.weather-property{
+    display: flex;
+    align-items: center;
+    border: 0.2px solid rgba(0, 0, 0, 0.075);   
+    border-radius: 10px;
+    padding: 5px;       
+    width: 16%;
+    justify-content: space-around;
+    background: rgb(255, 250, 250);
+}
+
+.weather-property img{
+    width: 25px;
+}
+
+.city-name,.city-date,.degrees,.weather-status,.city-feels{
+    margin: 0;
+}

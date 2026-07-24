@@ -1,0 +1,40 @@
+
+.Forecast{
+    border: 1px solid black;
+    margin: 15px 25px;
+    background: white;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+.forcast-head{
+    margin: 5px;
+}
+.days{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.forcast-day,.forcast-date,.forcast-temp,.forcast-status{
+    margin: 0;
+}
+
+.day{
+    background: rgb(255, 250, 250);
+    border: 0.2px solid rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    gap:5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.day img{
+    width: 40px;
+}

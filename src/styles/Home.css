@@ -1,0 +1,128 @@
+.main-container {
+    display: flex;
+    width: 100vw;
+    height: 87vh;
+}
+
+.left-main {
+    flex: 0.65;
+}
+
+.right-main {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3;
+}
+
+.search_location {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 25px;
+    gap: 15px;
+}
+
+.searchbar-comp {
+    width: 75%;
+}
+
+.location-btn {
+    width: 20%;
+    border: 1.5px solid rgba(0, 68, 255, 0.8);
+    border-radius: 10px;
+    font-weight: 600;
+    color: blue;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 250, 250);
+}
+
+.location-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.home-weather-card {
+    height: 35vh;
+}
+
+.searches img {
+    width: 20px;
+}
+
+.searches {
+    display: flex;
+    align-items: center;
+    border: 0.2px solid rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    padding: 5px;
+    width: 80%;
+    justify-content: space-between;
+    background: rgb(255, 250, 250);
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 8px;
+    font-size: small;
+}
+
+.recent-search {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+}
+
+.searches-left {
+    display: flex;
+    gap: 8px;
+}
+
+.searches button {
+    background: transparent;
+    border: none;
+}
+
+.additional-info {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.additional-info img{
+    width: 25px;
+}
+
+.sunrise,.sunset,.AQI{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+}
+.sunrise-left,.sunset-left,.AQI-left{
+    gap: 10px;
+    display: flex;
+    margin-left: 10px;
+}
+.sunrise,.sunset{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.112);
+}
