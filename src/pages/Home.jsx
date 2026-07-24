@@ -12,56 +12,41 @@ import "../styles/Home.css"
 
 
 const Home = () => {
+  const recentSearches = [
+    "Hyderabad",
+    "Chennai",
+    "Mumbai",
+    "Delhi",
+    "Vizag"
+  ];
   return (
     <div>
       <Navbar />
       <div className="main-container">
         <div className='left-main'>
           <div className='search_location'>
-            <SearchBar/>
+            <SearchBar />
             <button className='location-btn'> <img src={location} className='location-img' /> Use My Location</button>
           </div>
-          <WeatherCard className="home-weather-card" />
+          <WeatherCard />
           <Forecast />
         </div>
         <div className="right-main">
           <div className="recent-search">
             <h3 className='recent-search-heading'>Recent Searches</h3>
-            <div className="searches">
-              <div className='searches-left'>
-                <img src={clock} alt="clock" />
-                <p>Hyderabad</p>
-              </div>
-              <button><img src={Delete} alt="Delete" /></button>
-            </div>
-            <div className="searches">
-              <div className='searches-left'>
-                <img src={clock} alt="clock" />
-                <p>Hyderabad</p>
-              </div>
-              <button><img src={Delete} alt="Delete" /></button>
-            </div>
-            <div className="searches">
-              <div className='searches-left'>
-                <img src={clock} alt="clock" />
-                <p>Hyderabad</p>
-              </div>
-              <button><img src={Delete} alt="Delete" /></button>
-            </div>
-            <div className="searches">
-              <div className='searches-left'>
-                <img src={clock} alt="clock" />
-                <p>Hyderabad</p>
-              </div>
-              <button><img src={Delete} alt="Delete" /></button>
-            </div>
-            <div className="searches">
-              <div className='searches-left'>
-                <img src={clock} alt="clock" />
-                <p>Hyderabad</p>
-              </div>
-              <button><img src={Delete} alt="Delete" /></button>
-            </div>
+            {
+              recentSearches.map((search) => (
+                <>
+                  <div className="searches" key={search}>
+                    <div className='searches-left'>
+                      <img src={clock} alt="clock" />
+                      <p>{search}</p>
+                    </div>
+                    <button><img src={Delete} alt="Delete" /></button>
+                  </div>
+                </>
+              ))
+            }
           </div>
           <div className="additional-info">
             <h3>Additional info</h3>
@@ -86,7 +71,7 @@ const Home = () => {
               </div>
               <p>42(Good)</p>
             </div>
-            
+
           </div>
         </div>
       </div>
