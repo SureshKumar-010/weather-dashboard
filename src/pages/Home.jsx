@@ -1,8 +1,8 @@
 import React from 'react'
-import SearchBar from '../components/SearchBar'
-import WeatherCard from '../components/WeatherCard'
-import Forecast from '../components/Forecast'
-import Navbar from '../components/Navbar'
+import SearchBar from '../temp/SearchBar'
+import WeatherCard from '../temp/WeatherCard'
+import Forecast from '../temp/Forecast'
+import Navbar from '../temp/Navbar'
 import "../styles/Home.css"
 import location from "../assets/icons/location.png"
 import clock from "../assets/icons/clock.png"
