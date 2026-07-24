@@ -1,8 +1,8 @@
 import React from 'react'
-import SearchBar from '../Components/SearchBar'
-import WeatherCard from '../Components/WeatherCard'
-import Forecast from '../Components/Forecast'
-import Navbar from '../Components/Navbar'
+import SearchBar from '../components/SearchBar'
+import WeatherCard from '../components/WeatherCard'
+import Forecast from '../components/Forecast'
+import Navbar from '../components/Navbar'
 import "../styles/Home.css"
 import location from "../assets/icons/location.png"
 import clock from "../assets/icons/clock.png"
@@ -19,7 +19,7 @@ const Home = () => {
       <div className="main-container">
         <div className='left-main'>
           <div className='search_location'>
-            <SearchBar className="searchbar-comp" />
+            <SearchBar/>
             <button className='location-btn'> <img src={location} className='location-img' /> Use My Location</button>
           </div>
           <WeatherCard className="home-weather-card" />
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
           </div>
           <div className="additional-info">
-            <h3>Additonal info</h3>
+            <h3>Additional info</h3>
             <div className="sunrise">
               <div className='sunrise-left'>
                 <img src={Sunrise} alt="clock" />
