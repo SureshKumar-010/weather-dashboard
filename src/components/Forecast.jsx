@@ -47,11 +47,11 @@ const Forecast = () => {
       <h3 className='forcast-head'>5-Day Forecast</h3>
       <div className='days'>
         {
-          days.map((day,index) => (
-              <div className='day' key={index}>
+          days.map((day) => (
+              <div className='day' key={day.day}>
                 <h4 className='forcast-day'>{day.day}</h4>
                 <p className='forcast-date'>{day.date}</p>
-                <img src={day.icon} alt="sun" />
+                <img src={day.icon} alt={day.status} />
                 <p className='forcast-temp'><strong>{day.deg}</strong></p>
                 <p className='forcast-status'>{day.status}</p>
               </div>

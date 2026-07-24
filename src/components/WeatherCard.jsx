@@ -57,9 +57,9 @@ const WeatherCard = () => {
       </div>
       <div className="weather-properties">
         {
-          weatherDetails.map((item,index) => (
+          weatherDetails.map((item) => (
             <WeatherInfoCard 
-            key={index}
+            key={item.label}
             icon={item.icon}
             label = {item.label}
             value = {item.value}

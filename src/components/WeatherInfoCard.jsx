@@ -1,9 +1,8 @@
-import React from 'react'
 import "../styles/WeatherInfoCard.css"
 
-const WeatherInfoCard = ({icon,label,value,key}) => {
+const WeatherInfoCard = ({icon,label,value}) => {
     return (
-        <div className='weather-property' key={key}>
+        <div className='weather-property'>
             <img src={icon} alt="image" />
             <div className='weather-property-flex'>
                 <p>{label}</p>
