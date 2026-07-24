@@ -1,7 +1,6 @@
-import React from 'react'
-import "../styles/Navbar.css"
-import appLogo from "../assets/icons/weather.png"
 import toogle from "../assets/icons/sun.png"
+import appLogo from "../assets/icons/weather.png"
+import "../styles/Navbar.css"
 const Navbar = () => {
   return (
     <div className='Navbar'>

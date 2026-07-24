@@ -1,6 +1,4 @@
-import React from 'react'
 import "../styles/SearchBar.css"
-import search from "../assets/icons/search.png"
 const SearchBar = () => {
   return (
     <div className='whole-search'>

@@ -1,10 +1,9 @@
-import React from 'react'
-import partlyCloudy from "../assets/icons/partly-cloudy.png"
-import Humidity from "../assets/icons/humidity.png"
-import Wind from "../assets/icons/wind.png"
 import Pressure from "../assets/icons/hot.png"
-import Visibility from "../assets/icons/visible.png"
+import Humidity from "../assets/icons/humidity.png"
+import partlyCloudy from "../assets/icons/partly-cloudy.png"
 import Precipitation from "../assets/icons/precipitation.png"
+import Visibility from "../assets/icons/visible.png"
+import Wind from "../assets/icons/wind.png"
 import "../styles/WeatherCard.css"
 
 const WeatherCard = () => {

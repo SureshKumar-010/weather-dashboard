@@ -1,9 +1,8 @@
-import React from 'react'
-import "../styles/Forecast.css"
-import Sunny from "../assets/icons/sun.png"
-import Rainy from "../assets/icons/rain-drops.png"
 import PartlyCloudy from "../assets/icons/partly-cloudy.png"
+import Rainy from "../assets/icons/rain-drops.png"
 import Thunderstorm from "../assets/icons/rain.png"
+import Sunny from "../assets/icons/sun.png"
+import "../styles/Forecast.css"
 
 const Forecast = () => {
   return (
